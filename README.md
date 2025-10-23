@@ -122,8 +122,7 @@ Data Science Enthusiast | AI Researcher | Analyst
 ---
 
 ## ⭐ Acknowledgment
-
-Data sourced from **Hyperliquid** and **Market Sentiment Index APIs**.  
+ 
 Developed as part of the project:  
 > _“Analyzing the relationship between trader behavior and market sentiment to identify hidden trends for smarter trading decisions.”_
 
