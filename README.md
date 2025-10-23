@@ -1,71 +1,132 @@
-# ds_Pradipta_Khan
 
-[![Repository: pradipta2005/ds_Pradipta_Khan](https://img.shields.io/badge/repo-pradipta2005/ds__Pradipta__Khan-blue?logo=github)]()
-[![Language: Jupyter Notebook](https://img.shields.io/badge/language-Jupyter%20Notebook-orange?logo=Jupyter)]()
+# 📊 Trader Behavior vs Market Sentiment Analysis
 
-A focused collection of data‑science work authored by Pradipta Khan. This repository contains Jupyter Notebook analysis and a delivered report with minimal project scaffolding. The README below documents the exact repository contents and how to use them.
+### Analyze how trading behavior (profitability, risk, volume, leverage) aligns or diverges from overall market sentiment (fear vs greed).
 
-Table of contents
-- About
-- Repository structure (exact)
-- Quick start
-- Running the notebook
-- Viewing the report
-- Notes & best practices
-- Contact
+---
 
-About
------
-This repository contains a single primary notebook and an accompanying PDF report. Two directories are present for data and outputs. The contents are intentionally minimal and intended for reproducible exploration and demonstration.
+## 🧠 Project Overview
 
-Repository structure (exact)
-----------------------------
-Root of repository (exact items present):
-- csv_files/            — directory ( for CSV datasets)
-- output/               — directory ( for generated outputs/figures)
-- ds_report.pdf         — PDF report produced from the analysis
-- notebook_1.ipynb      — primary Jupyter Notebook containing the analysis
+This project explores the intricate relationship between **trader behavior** and **market sentiment**, identifying patterns that can enhance smarter trading strategies.  
+It combines **trading data from Hyperliquid** with **market sentiment indicators** to uncover trends in profitability, risk exposure, and leverage decisions under varying emotional market states (fear vs greed).
 
-Quick start
------------
-1. Clone the repository:
-   git clone https://github.com/pradipta2005/ds_Pradipta_Khan.git
-   cd ds_Pradipta_Khan
+---
 
-2. Prepare an environment (conda recommended) and install packages you need (this repo does not include an environment file):
-   - Example (conda):
-     conda create -n ds_pradipta python=3.10 -y
-     conda activate ds_pradipta
-     pip install jupyter pandas numpy matplotlib seaborn scikit-learn
-   - Or use your preferred environment manager and install packages required by the notebook.
+## 🧩 Key Objectives
 
-Running the notebook
---------------------
-1. Start Jupyter:
-   jupyter notebook
-   or
-   jupyter lab
+- Understand how trader behavior correlates with market sentiment.  
+- Identify behavioral signals that precede shifts in market trends.  
+- Visualize and quantify trading patterns such as:
+  - Profit/Loss trends
+  - Leverage behavior
+  - Volume dynamics
+  - Sentiment divergence zones
 
-2. Open notebook_1.ipynb in the browser.
+---
 
-3. Ensure the selected kernel corresponds to the Python environment where dependencies were installed.
+## 🧰 Technologies Used
 
-4. Execute cells top-to-bottom the first time to generate outputs. If the notebook expects CSV data, place files into the csv_files/ directory (create filenames/paths referenced inside the notebook if necessary).
+- **Python 3.10+**
+- **Jupyter Notebook**
+- **Pandas**, **NumPy**
+- **Matplotlib**, **Seaborn**, **Plotly**
+- **Scikit-learn** *(if feature correlations or models are applied)*
+- **Datetime** and **Feature Engineering tools**
 
-Headless execution
-------------------
-To execute the notebook and produce an executed copy (useful for CI or to reproduce results programmatically):
-jupyter nbconvert --to notebook --execute notebook_1.ipynb --output executed_notebook_1.ipynb
+---
 
-Viewing the report
-------------------
-- ds_report.pdf is a compiled report (PDF) of findings from the analysis. Open it with any PDF viewer.
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/trader-sentiment-analysis.git
+cd trader-sentiment-analysis
+```
+
+### 2. Create a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate    # for macOS/Linux
+venv\Scripts\activate       # for Windows
+```
+
+### 3. Install Dependencies
 
 
+```bash
+pip install pandas numpy matplotlib seaborn plotly scikit-learn
+```
+
+### 4. Open the Notebook
+```bash
+jupyter notebook notebook_1.ipynb
+```
+
+---
+
+## 📈 Workflow
+
+1. **Data Preprocessing** – Load and clean raw trading and sentiment datasets.  
+2. **Merging Datasets** – Align trading data with sentiment scores based on timestamps.  
+3. **Feature Engineering** – Derive metrics like:
+   - Daily Profit/Loss
+   - Trade Volume
+   - Leverage Ratios
+   - Sentiment Indicators  
+4. **Exploratory Data Analysis (EDA)** – Generate plots showing:
+   - Correlation between risk and sentiment  
+   - Behavior shifts during extreme fear/greed periods  
+   - Distribution of profitability across traders  
+5. **Insights & Conclusions** – Summarize patterns that can guide better trading decisions.
+
+---
+
+## 🪄 Output Highlights
+
+- Interactive visualizations showing trading trends under various sentiment conditions.  
+- Statistical analysis linking behavior metrics to sentiment shifts.  
+- Actionable insights summarized for traders and analysts.  
+
+---
+
+## 📝 Notes
+
+- Ensure both datasets (trading and sentiment) are available and formatted properly before execution.  
+- Large datasets may increase runtime — optimize using sampling if needed.  
+- Sentiment indices should be timestamp-aligned with trading logs for accuracy.  
+- This notebook is designed for **research and educational purposes**.
+
+---
+
+## 🧩 Folder Structure
+
+```
+📁 trader-sentiment-analysis/
+│
+├── 📓 notebook_1.ipynb           # Main analysis notebook
+├── 📁 csv_files/                 # Raw and processed data files
+├── 📁 outputs/                   # Plots and charts generated
+└── 📄 ds_report.pdf              # Final summarized insights and explanations.     
+└── 📄 README.md                  # Documentation (this file)
+```
+
+---
+
+## 👤 Author
+
+**Pradipta Khan**  
+Data Science Enthusiast | AI Researcher | Analyst  
+
+📬 Connect: [LinkedIn](https://www.linkedin.com/in/pradipta-khan) | [GitHub](https://github.com/pradipta2005)
+
+---
+
+## ⭐ Acknowledgment
+
+Data sourced from **Hyperliquid** and **Market Sentiment Index APIs**.  
+Developed as part of the project:  
+> _“Analyzing the relationship between trader behavior and market sentiment to identify hidden trends for smarter trading decisions.”_
+
+---
 
 
-
-Contact
--------
-Repository owner / author: pradipta2005 (Pradipta Khan)
-For questions or collaboration, open an issue on this repository.
